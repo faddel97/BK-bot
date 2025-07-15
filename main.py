@@ -31,6 +31,6 @@ async def on_ready():
 async def on_message(message):
     if message.channel.id == CHANNEL_ID and message.content.strip().lower() == "مقطع":
         video = random.choice(video_links)
-        await message.channel.send(f"🎥 مقطع عشوائي:\n{{video}}")
+        await message.channel.send(f"🎥 مقطع عشوائي:\n{video}")
 
 client.run(TOKEN)
